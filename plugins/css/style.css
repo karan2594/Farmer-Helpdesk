@@ -1,0 +1,85 @@
+.modal { overflow-y: auto; }
+a{ color: black; }
+.title{ padding-left: 35rem;color:red ;font-size: 3rem}
+.in{ display: inline-block; }
+.padding_menu{ padding-left: 0.5rem; }
+.parallax-container { height: 25rem; }
+.form-padding{ padding-top: 3.5rem; }
+.btn-size { width: 170px; height: 2.7rem; text-align: left; font-size: 1.5rem; vertical-align: middle; }
+.box1-padding { padding-top: 1.2rem; }
+.text1{ margin-left: auto; margin-right: auto; }
+#flot{padding-bottom: 3rem}
+/*for color of label ie. username, password */
+.input-field label { color: #ffffff; }
+/* for color of label on focus */
+.input-field input[type=text]:focus + label { color: #ffffff; }
+.input-field input[type=password]:focus + label { color: #ffffff;  }
+/*for color of underline on focus */
+.input-field input[type=text]:focus { border-bottom: 1px solid #ffffff;  box-shadow: 0 1px 0 0 #000; }
+.input-field input[type=password]:focus {  border-bottom: 1px solid #ffffff;  box-shadow: 0 1px 0 0 #000; }
+/* for color of underline NOT ON FOCUS */
+.input-field input[type=text]{ color: #ffffff; border-bottom: 1px solid #ffffff; }
+.input-field input[type=password]
+{
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
+}
+#but{ width: 17rem;}
+.footimg
+{
+  width: 100%;
+  height: 25%;
+}
+
+.par_img
+{
+  background: transparent url(../plugins/images/market.jpg) no-repeat center top;
+}
+
+table
+{
+  width: 60%;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+.left_pad
+{
+  padding-left: 1rem;
+}
+
+.right_pad
+{
+  padding-right: 3rem;
+}
+
+.value
+{
+  width: 20px;
+  font-size: 1.3rem;
+}
+
+.table_heading
+{
+  font-size: 1.7rem;
+}
+
+.unit
+{
+  font-size: 1.3rem;
+}
+
+td{
+  font-size: 1.3rem;
+}
+
+p
+{
+  font-size: 1.24rem;
+}
+
+.circle-image
+{
+  width: 70%;
+  height: 70%;
+}
