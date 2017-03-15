@@ -1,0 +1,54 @@
+<html>
+<head>
+  <link rel="stylesheet" href="plugins/materialize/css/materialize.css">
+    <link rel="stylesheet" href="plugins/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="plugins/js/script.js"></script>
+    <script src="plugins/js/jquery-3.1.1.js"></script>
+    <script src="plugins/js/moment.js"></script>
+    <script src="plugins/materialize/js/materialize.min.js"></script>
+    <script>
+    n =  new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+  document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
+<p id="date"></p>
+    <div class="row">
+      <div class="col m2 yellow">
+        <div class="time">
+          <span><p id="date">Date-TIME</p></span>
+        </div>
+      </div>
+      <div class="col m7 green">
+        <div class="navigation ">
+          <p>navigation</p>
+        </div>
+      </div>
+      <div class="col m3  blue">
+          <p>User</p>
+      </div>
+
+      <div class="col m9 indigo" >
+        <p>options</p>
+      </div>
+      <div class="col m3 blue">
+        <p>schemes</p>
+      </div>
+      <div class="col m9 orange" >
+        <p>weather</p>
+      </div>
+      <div class="col m3 purple">
+        <p>adv</p>
+      </div>
+    </div>
+    <p id="date"></p>
+
+
+  </body>
+</html>
