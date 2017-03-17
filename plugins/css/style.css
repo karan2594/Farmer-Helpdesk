@@ -30,7 +30,9 @@ a{ color: black; }
   width: 100%;
   height: 25%;
 }
-
+body{
+  overflow: hidden;
+}
 .par_img
 {
   background: transparent url(../plugins/images/market.jpg) no-repeat center top;
@@ -82,4 +84,125 @@ p
 {
   width: 70%;
   height: 70%;
+}
+
+
+@font-face {
+    font-family: 'weather';
+    src: url(../fonts/artill_clean_icons.otf);
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+
+.weather-icon
+{
+  font-size: 120px;
+  color: #fff;
+  font-family: weather;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+  text-transform: none;
+  margin: 0px auto;
+}
+
+
+.card
+{
+  width: 77%
+}
+
+.img-card
+{
+  height: 18%;
+}
+
+.card-content
+{
+  height:8.7%;
+}
+
+.temperature
+{
+  font-size: 80px;
+  margin: 0 0 100px auto;
+   vertical-align: middle;
+   color: white;
+
+}
+
+.weather-box
+{
+width: 40%;
+ height: 40%;
+ background: url(../images/temp.jpg) no-repeat;
+ background-size: cover;
+ overflow: hidden;
+}
+
+.condition
+{
+  color: white;
+}
+
+.above-card
+{
+  padding-top: 2.3rem;
+  padding-left: 2.6rem;
+  padding-bottom: 300px;
 }
