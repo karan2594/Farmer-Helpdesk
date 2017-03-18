@@ -21,6 +21,26 @@ session_start();
 </script>
 </head>
   <body class= "teal lighten-4">
+  <?php
+        $conn = mysqli_connect("mysql.hostinger.in", "u956517326_akash", "nokia5001995");
+        mysqli_select_db($conn,"u956517326_portf");
+        $name=$_SESSION["id"];
+        $result = mysqli_query($conn,"SELECT * FROM crops WHERE isby = '$name'"); 
+          while($row = mysqli_fetch_array($result))
+          {
+            for($i=1;$i<=mysqli_num_rows($result);$i++)
+              {
+                $w1=$row['wheat'];
+                $w2=$row['rice'];
+                $w3=$row['toor dal'];
+                $w4=$row['maize'];
+                $w5=$row['sugarcane'];
+                $w6=$row['cotton'];
+                $w7=$row['date1'];
+              }
+          }
+  ?>
+
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
     <script src="plugins/js/script.js"></script>
     <script src="plugins/materialize/js/materialize.min.js"></script>
@@ -68,39 +88,33 @@ session_start();
       <tr>
         <td>Toor Dal</td>
         <td><div class="input-field">
-              <input id="v3" type="text" class="value">
+              <input type="text" id="v3" name="v3">
             </div>
         </td>
       </tr>
       <tr>
         <td>Maize</td>
         <td><div class="input-field">
-              <input id="v4" type="text" class="value">
+              <input type="text" id="v4" name="v4">
             </div>
         </td>
       </tr>
       <tr>
         <td>Sugarcane</td>
         <td><div class="input-field">
-              <input id="v5" type="text" class="value">
+              <input type="text" id="v5" name="v5">
             </div>
         </td>
       </tr>
       <tr>
         <td>Cotton</td>
         <td><div class="input-field">
-              <input id="v6" type="text" class="value">
-            </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Wheat</td>
-        <td><div class="input-field">
-              <input id="v7" type="text" class="value">
+              <input type="text" id="v6" name="v6">
             </div>
         </td>
       </tr>
     </table>
+
   </div>
   <div class="col m4 s5">
     <ul class="collection">
@@ -111,11 +125,72 @@ session_start();
       ?>
       
       <p><?php
-      echo $_SESSION["place"];?><br>
-         Market: Padra
+      echo $_SESSION["place"];?>
       </p>
 
     </li>
+    </ul>
+    <br><br><br>
+    <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">Name</th>
+              <th data-field="name">Item Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>wheat</td>
+            <td><?php
+            echo $w1;
+            ?>
+            </td>
+          </tr>
+          <tr>
+            <td>rice</td>
+            <td><?php
+            echo $w2;
+            ?>
+            </td>
+          </tr>
+          <tr>
+            <td>Toor Dal</td>
+            <td><?php
+            echo $w3;
+            ?>
+            </td>
+          </tr>
+          <tr>
+            <td>Maize</td>
+            <td><?php
+            echo $w4;
+            ?>
+            </td>
+          </tr>
+          <tr>
+            <td>Sugarcane</td>
+            <td><?php
+            echo $w5;
+            ?>
+            </td>
+          </tr>
+          <tr>
+            <td>Cotton</td>
+            <td><?php
+            echo $w6;
+            ?>
+            </td>
+          </tr>
+          <tr>
+            <td>Last</td>
+            <td><?php
+            echo $w7;
+            ?>
+            </td>
+          </tr>
+        </tbody>
+      </table>
   </div>
 </div>
   </div>
@@ -127,24 +202,27 @@ session_start();
       <i class="large material-icons">reorder</i></a>
     <ul>
       <li><a class="btn-floating red btn-large" onclick="ClearFields();"><i class="material-icons">delete</i></a></li>
-      <li><input type= "submit" name="submit" id="submit" a class="btn-floating green darken-1 btn-large" onclick="insert1()"; ><i class="material-icons" type="submit">done_all</i></a></li>
+      <li><button type= "submit" name="submit" id="submit" class="btn-floating green darken-1 btn-large"><i class="material-icons" type="submit">done_all</i></button></li>
       </ul>
       </form>
-      <script>
-      function insert1() {
       <?php
       if(isset($_POST['submit']))
-{
-      $name=$_SESSION["id"];
+        {
+      
         $v1=$_POST["v1"];
         $v2=$_POST["v2"];
-        echo $v1;
-        $conn = mysqli_connect("localhost","root","");
-        mysqli_select_db($conn,"login");
-        mysqli_query($conn,"INSERT INTO `crops` (`id`, `isby`, `wheat`, `rice`) VALUES (NULL, 'as', '$v1', 'XA');");}
+        $v3=$_POST["v3"];
+        $v4=$_POST["v4"];
+        $v5=$_POST["v5"];
+        $v6=$_POST["v6"];
+        date_default_timezone_set("Asia/Kolkata");
+        $d1=date("Y-m-d h:i:sa");
+        mysqli_query($conn,"DELETE FROM `crops` WHERE `crops`.`isby` = '$name'");
+        mysqli_query($conn,"INSERT INTO `crops` (`id`, `isby`, `wheat`, `rice`, `toor dal`, `maize`, `sugarcane`, `cotton`, `date1`) VALUES (NULL, '$name', '$v1', '$v2', '$v3', '$v4', '$v5', '$v6', '$d1');");
+        echo "<meta http-equiv='refresh' content='0'>";
+
+        }
         ?>
-      }
-        </script>
 
   </div>
 

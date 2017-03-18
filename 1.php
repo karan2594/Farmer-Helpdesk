@@ -87,8 +87,8 @@ $user_name = $_POST["user_name"];
 $password = $_POST["password"];
 $count = "0";
 
-$conn = mysqli_connect("localhost","root","");
-mysqli_select_db($conn,"login");
+$conn = mysqli_connect("mysql.hostinger.in", "u956517326_akash", "nokia5001995");
+        mysqli_select_db($conn,"u956517326_portf");
 
 $result = mysqli_query($conn,"SELECT * FROM details WHERE id = '$user_name' and password = '$password'"); 
 while($row = mysqli_fetch_array($result))
