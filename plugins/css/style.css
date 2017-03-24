@@ -151,7 +151,7 @@ p
 
 .weather-icon
 {
-  font-size: 120px;
+  font-size: 90px;
   color: #fff;
   font-family: weather;
   font-weight: normal;
@@ -179,7 +179,7 @@ p
 
 .temperature
 {
-  font-size: 80px;
+  font-size: 70px;
   margin: 0 0 100px auto;
    vertical-align: middle;
    color: white;
@@ -205,4 +205,64 @@ width: 40%;
   padding-top: 2.3rem;
   padding-left: 2.6rem;
   padding-bottom: 300px;
+}
+
+div.horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.navrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-arrows {
+    background-color: #cff;
+    width: 350px;
+    height: 150px;
+}
+
+.nav-time
+{
+  font-size: 1.7rem;
+}
+
+.nav-date
+{
+font-size: 14px;
+
+}
+
+.time
+{
+  overflow: hidden;
+}
+
+.collapsible-box
+{
+  padding-top: 2.7%;
+}
+
+.collapsible-header
+{
+  height: 4rem;
+}
+.expert-list
+{
+   border:3.7px solid #ff8a65;
+}
+.expert-category
+{
+  font-size: 1.4rem;
+}
+
+
+.expert-collapsible
+{
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 2.7%;
+  padding-bottom: 3%;
 }

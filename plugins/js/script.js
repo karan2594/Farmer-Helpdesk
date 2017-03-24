@@ -11,7 +11,7 @@ $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
   });
-  
+
 $(document).ready(function(){
    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
    $('.modal-trigger').leanModal();
@@ -33,7 +33,7 @@ $(document).ready(function(){
          woeid: '',
          unit: 'c',
          success: function(weather) {
-           html = '<center><i class="icon-'+weather.code+' weather-icon"></i> '+ '&nbsp<span class="temperature">'+weather.temp+'&deg;'+weather.units.temp+'</span><p class="condition">'+weather.currently+'</p></center>';
+           html = '<center><i class="icon-'+weather.code+' weather-icon"></i> '+ '&nbsp<span class="temperature">'+weather.temp+'&deg;'+weather.units.temp+'</span></br> <span class="condition">'+weather.currently+'</span></center>';
 
 
            $("#weather").html(html);
@@ -43,3 +43,8 @@ $(document).ready(function(){
          }
        });
      };
+
+     $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
+            

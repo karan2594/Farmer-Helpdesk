@@ -1,0 +1,269 @@
+<html>
+<head>
+  <link rel="stylesheet" href="plugins/materialize/css/materialize.css">
+    <link rel="stylesheet" href="plugins/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="plugins/js/script.js"></script>
+    <script src="plugins/materialize/js/materialize.min.js"></script>
+    <script src="plugins/js/weather/jquery.simpleWeather.js"></script>
+    <script>
+    function date_time(id)
+{
+        date = new Date;
+        year = date.getFullYear();
+        month = date.getMonth();
+        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+        d = date.getDate();
+        day = date.getDay();
+        days = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        result = ' <span class="nav-time"> '+h+':'+m+' </span> </br><span class="nav-date">'+days[day]+'  '+d+' '+months[month]+'    '+year+' </span>';
+        document.getElementById(id).innerHTML = result;
+        setTimeout('date_time("'+id+'");','1000');
+        return true;
+}
+</script>
+    <div class="row">
+      <div class="col m2 yellow time">
+        <div class="time">
+          <span id="date_time" ></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+        </div>
+      </div>
+      <div class="col m7 green">
+        <div class="navigation ">
+          <p>navigation</p>
+        </div>
+      </div>
+      <div class="col m3  blue">
+          <p>Gov. Schemes</p>
+      </div>
+
+      <div class="col m9 blue lighten-5" >
+        <span style="font-size:2rem;padding-top:2.7%; padding-left:3%;">Ask Expert</span>
+        <div class="expert-collapsible">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header active teal lighten-3"><span class="expert-category">Farming Equipments</span></div>
+                <div class="collapsible-body white">
+                  <div class="collapsible-box">
+                    <div class="row">
+                      <div class="col m2">
+                        <center>
+                          <a href="#expert1-modal"><img src="plugins/images/expert1.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;"></a>
+                          </br>
+                          <span>Raman LAL</span>
+                        </center>
+                      </div>
+                      <div class="col m2">
+                        <center>
+                        <img src="plugins/images/expert2.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+                        </br>
+                        <span>Jyanti</span>
+                        </center>
+                      </div>
+                      <div class="col m2">
+                        <center>
+                        <img src="plugins/images/expert3.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+                        </br>
+                        <span>Champak Gada</span>
+                      </center>
+                    </div>
+            <div class="col m2">
+              <center>
+              <img src="plugins/images/expert4.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+              </br>
+              <span>Kanu Khedut</span>
+            </center>
+          </div>
+          <div class="col m2">
+            <center>
+            <img src="plugins/images/expert2.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+            </br>
+            <span>Jay Sinh</span>
+          </center>
+        </div>
+              </div>
+            </div>
+          </div>
+            </li>
+            <li>
+              <div class="collapsible-header lime lighten-3"><span class="expert-category">Crop nutrition</span></div>
+              <div class="collapsible-body white">
+              <!--KACHRO-->
+              <div class="collapsible-box">
+              <div class="row">
+                <div class="col m2">
+                  <center>
+                  <img src="plugins/images/expert1.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+                  </br>
+                  <span>Raman LAL</span>
+                </center>
+              </div>
+              <div class="col m2">
+                <center>
+                <img src="plugins/images/expert2.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+                </br>
+                <span>Jyanti</span>
+              </center>
+            </div>
+            <div class="col m2">
+              <center>
+              <img src="plugins/images/expert3.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+              </br>
+              <span>Champak Gada</span>
+            </center>
+          </div>
+          <div class="col m2">
+            <center>
+            <img src="plugins/images/expert4.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+            </br>
+            <span>Kanu Khedut</span>
+          </center>
+        </div>
+        <div class="col m2">
+          <center>
+          <img src="plugins/images/expert2.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+          </br>
+          <span>Jay Sinh</span>
+        </center>
+      </div>
+            </div>
+          </div>
+        </div>
+          <!--KACHRO-->
+            </li>
+            <li>
+              <div class="collapsible-header orange lighten-3"><span class="expert-category">Farming techniques</span></div>
+              <div class="collapsible-body white">
+              <!--KACHRO-->
+              <div class="collapsible-box">
+              <div class="row">
+                <div class="col m2">
+                  <center>
+                  <a href="#expert1-modal"><img src="plugins/images/expert1.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+                  </br>
+                  <span>Raman LAL</span></a>
+                </center>
+              </div>
+              <div class="col m2">
+                <center>
+                <img src="plugins/images/expert2.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+                </br>
+                <span>Jyanti</span>
+              </center>
+            </div>
+            <div class="col m2">
+              <center>
+              <img src="plugins/images/expert3.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+              </br>
+              <span>Champak Gada</span>
+            </center>
+          </div>
+          <div class="col m2">
+            <center>
+            <img src="plugins/images/expert4.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+            </br>
+            <span>Kanu Khedut</span>
+          </center>
+        </div>
+        <div class="col m2">
+          <center>
+          <img src="plugins/images/expert2.jpg" class="responsive-img circle expert-list" style="height:100px;width:100px;">
+          </br>
+          <span>Jay Sinh</span>
+        </center>
+      </div>
+            </div>
+          </div>
+        </div>
+          <!--KACHRO-->
+            </li>
+          </ul>
+
+
+          </div>
+        </div>
+      <div class="col m3 ">
+        <ul>
+          <a href="#scheme1"><li>scheme</li></a>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+          <li>scheme</li>
+        </ul>
+      </div>
+        <!--Modals start from here-->
+        <div id="scheme1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+          </div>
+        </div>
+
+
+
+      <div class="col m9 orange" >
+        <p>hh</p>
+      </div>
+      <div class="col m3 weather-box ">
+        <div id="weather"></div>
+      </div>
+    </div>
+  </div>
+
+
+<!--MODALS FOR EXPERT DETAIL-->
+<div id="expert1-modal" class="modal bottom-sheet">
+    <div class="modal-content grey lighten-4">
+      <h5>Raman Lal</h5>
+      <ul class="collection">
+        <li class="collection-item avatar">
+        <img src="plugins/images/call.png" alt="" class="circle">
+        <h7>Phone number</h7>
+        <p>+919876543210</p>
+        </li>
+        <li class="collection-item avatar">
+        <img src="plugins/images/mail.png" alt="" class="circle">
+        <h7>E-mail</h7>
+        <p>abcxyz@gmail.com</p>
+        </li>
+      </ul>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn  pulse">OK</a>
+    </div>
+
+
+
+  </div>
+  </body>
+</html>
