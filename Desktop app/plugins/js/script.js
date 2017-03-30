@@ -85,3 +85,9 @@ $(document).ready(function(){
       $(function(){
           $("ul#ticker01").liScroll();
       });
+
+
+   $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+        
