@@ -4,17 +4,19 @@
 
 .temperature
 {
-  font-size: 70px;
+  font-size: 55px;
   margin: 0 0 100px auto;
    vertical-align: middle;
    color: white;
 
 }
-
+body{
+  color: black;
+}
 .weather-box
 {
 width: 40%;
- height: 40%;
+ height: 30%;
  background: url(../images/temp.jpg) no-repeat;
  background-size: cover;
  overflow: hidden;
@@ -27,7 +29,7 @@ width: 40%;
 
 .unit
 {
-  font-size: 1.3rem;
+  font-size: 0.7rem;
 }
 
 
@@ -54,7 +56,7 @@ p
 
 .weather-icon
 {
-  font-size: 90px;
+  font-size: 60px;
   color: #fff;
   font-family: weather;
   font-weight: normal;
@@ -120,17 +122,17 @@ p
 
 .card
 {
-  width: 77%
+  width: 60%
 }
 
 .img-card
 {
-  height: 18%;
+  height: 17%;
 }
 
 .card-content
 {
-  height:8.7%;
+  height:8%;
 }
 
 
@@ -161,7 +163,7 @@ div.horizontal {
 
 .nav-time
 {
-  font-size: 1.7rem;
+  font-size: 1.93rem;
 }
 
 .nav-date
@@ -170,10 +172,7 @@ font-size: 14px;
 
 }
 
-.time
-{
-  overflow: hidden;
-}
+
 
 .collapsible-box
 {
@@ -204,15 +203,15 @@ font-size: 14px;
 
 .holder {
   overflow:hidden;
-  padding:20px;
+  padding:10px;
 
 }
 .holder .mask {
   position: relative;
   left: 0px;
   top: 10px;
-  width:200px;
-  height:380px;
+  width:90%;
+  height:320px;
   overflow: hidden;
 }
 .holder ul {
@@ -227,4 +226,25 @@ font-size: 14px;
 .holder ul li a {
   color:darkred;
   text-decoration:none;
+}
+
+.nav-buttons {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    background: #a5d6a7;
+    border: 1.6px solid black;
+
+    text-align: center;
+    font: 20px;
+
+}
+
+.features
+{
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }

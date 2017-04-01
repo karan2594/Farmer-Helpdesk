@@ -1,9 +1,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="plugins/materialize/css/materialize.css">
-    <link rel="stylesheet" href="plugins/css/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="plugins/icons/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="plugins/css/style.css">
 </head>
   <body>
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
@@ -43,26 +42,29 @@
 }
 </script>
     <div class="row">
-      <div class="col m2 yellow time">
+      <div class="col m10 cyan darken-3 " style="height:64.4px;">
+        <div class="row">
+          <div class="col m3">
+        <img src="plugins/images/logo.png" class="img-responsive" width="36%" height="80%" style="padding-top:5px ;">
+      </div>
+      <div class="col m9">
+        <p style="padding-left:28%;">Farmer's Helpdesk</p>
+      </div>
+      </div>
+    </div>
+
+      <div class="col m2 cyan darken-3 time" style="height:64.4px;">
         <div class="time">
           <span id="date_time" ></span>
             <script type="text/javascript">window.onload = date_time('date_time');</script>
         </div>
       </div>
-      <div class="col m7 green">
-        <div class="navigation ">
-          <p>navigation</p>
-        </div>
-      </div>
-      <div class="col m3  blue">
-          <p>Gov. Schemes</p>
-      </div>
 
-      <div class="col m9 blue lighten-5" >
+      <div class="col m10 blue lighten-5 features" >
         <div class="above-card">
             <div class="col m4 ">
               <div class="card z-depth-1 hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-image ">
                   <img class="img-card" src="plugins/images/crop-prediction.jpg">
                 </div>
                 <div class="card-content center-align teal lighten-5">
@@ -72,7 +74,7 @@
             </div>
             <div class="col m4 ">
               <div class="card z-depth-1 hoverable ">
-                <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-image ">
                   <img  class="img-card" src="plugins/images/crop-details.jpg " >
                 </div>
                 <div class="card-content center-align teal lighten-5">
@@ -84,7 +86,7 @@
 
             <div class="col m4 ">
               <div class="card z-depth-1 hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-image ">
                   <img class="img-card" src="plugins/images/forum.jpg">
                 </div>
                 <div class="card-content center-align teal lighten-5">
@@ -96,7 +98,7 @@
 
             <div class="col m4 ">
               <div class="card z-depth-1 hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-image ">
                   <img class="img-card" src="plugins/images/market-rates.jpg">
                 </div>
                 <div class="card-content center-align teal lighten-5">
@@ -108,7 +110,7 @@
 
             <div class="col m4 ">
               <div class="card z-depth-1 hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-image">
                   <img class="img-card" src="plugins/images/ask-expert.jpg">
                 </div>
                 <div class="card-content center-align teal lighten-5">
@@ -120,7 +122,7 @@
 
             <div class="col m4 ">
               <div class="card z-depth-1 hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-image ">
                   <img class="img-card" src="plugins/images/locate.jpg">
                 </div>
                 <div class="card-content center-align amber lighten-5">
@@ -132,22 +134,19 @@
 
           </div>
         </div>
-      <div class="col m3 ">
-        <ul>
-          <a href="#scheme1"><li>scheme</li></a>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
-          <li>scheme</li>
+      <div class="col m2 ">
+        <span style="padding-top:1rem;font-size:1.3rem;"><center>News &nbsp<i class="fa fa-rss"></i></center></span>
+        <div class="holder">
+        <ul type="disc"  id="ticker01">
+          <li style="text-align:justify;"><i class="fa fa-dot-circle-o"></i>&nbsp West Bengal government to help farmers to grow 800 varieties of rice</li>
+          <li style="text-align:justify;"><i class="fa fa-dot-circle-o"></i>&nbsp A small Hyderabad-based firm is giving the world's biggest seed company Monsanto a hard time</li>
+          <li style="text-align:justify;"><i class="fa fa-dot-circle-o"></i>&nbsp Govt to impose sugar stock limit on mills to check hoarding</li>
+          <li style="text-align:justify;"><i class="fa fa-dot-circle-o"></i>&nbsp UP sugar mills cheer on good prices as South, West millers reel under draught</li>
+          <li style="text-align:justify;"><i class="fa fa-dot-circle-o"></i>&nbsp Natural Rubber production in the country set to exceed target</li>
+          <li style="text-align:justify;"><i class="fa fa-dot-circle-o"></i>&nbsp Natural Rubber production in the country set to exceed target</li>
+
         </ul>
+      </div>
       </div>
         <!--Modals start from here-->
         <div id="scheme1" class="modal modal-fixed-footer">
@@ -162,10 +161,10 @@
 
 
 
-      <div class="col m9 orange" >
+      <div class="col m10 orange" >
         <p>hh</p>
       </div>
-      <div class="col m3 weather-box ">
+      <div class="col m2 weather-box ">
         <div id="weather"></div>
       </div>
     </div>
