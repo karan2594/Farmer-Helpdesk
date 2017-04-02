@@ -4608,7 +4608,7 @@ small {
 }
 
 .card .card-content {
-  padding: 20px;
+  padding: 6.6px; /*20px*/
   border-radius: 0 0 2px 2px;
 }
 
@@ -7405,7 +7405,7 @@ input[type=range]:focus::-ms-fill-upper {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 230px; /*500px*/
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;

@@ -120,19 +120,19 @@ p
 
 
 
-.card
+.feature-card
 {
   width: 60%
 }
 
-.img-card
+.feature-card-img
 {
   height: 17%;
 }
 
-.card-content
+.feature-content
 {
-  height:8%;
+  height:6.7%;
 }
 
 
@@ -141,7 +141,7 @@ p
 {
   padding-top: 2.3rem;
   padding-left: 2.6rem;
-  padding-bottom: 300px;
+
 }
 
 div.horizontal {
@@ -247,4 +247,30 @@ font-size: 14px;
   background: url(../images/background.jpg) no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+
+.season , .temp
+{
+  font-size: 0.97rem;
+
+}
+
+.crop-details-img
+{
+  height: 48%;
+}
+
+.crop-details-card
+{
+  width: 70%;
+}
+
+.crop-details-card-content
+{
+  height: 18%;
+}
+
+.carousel-item
+{
+  height: 73%;
 }

@@ -1,8 +1,15 @@
 
-    $(document).ready(function(){
-      $('.carousel').carousel();
-    });
-        
+$(document).ready(function(){
+   $('.carousel').carousel({
+         dist:-40,
+         shift:0,
+         padding:70,
+
+
+   });
+
+ });
+
 (function($){
   $(function(){
 
